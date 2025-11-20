@@ -1,0 +1,16 @@
+# ignore files with the word "venv" in the name
+venv/
+.venv/
+.env/
+.env.local/
+.env.development.local/
+.env.test.local/
+.env.production.local/
+.env.development/
+.env.test/
+.env.production/
+
+project-venv/
+
+# ds store files
+.DS_Store
