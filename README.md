@@ -34,6 +34,8 @@ We used this comprehensive sk-learn pipeline framework to rigorously test the pe
 ## 📊 Experiments and Results Summary
 The model evaluation utilised two separate cross-validation processes: Stratified 5-Fold CV for traditional machine learning (ML) models and Stratified 3-Fold CV for deep learning (DL) models (due to computational limits), with the Receiver Operating Characteristic - Area Under Curve (ROC AUC) as the primary stability metric.
 
+> _Note: The metrics for BiLSTM and DistilBERT reflect the results obtained after the final training. In contrast, the metrics for the other models are based on the stratified k-fold CV approach. These results have been compiled into a table for conciseness._
+
 | Model | Precision | Recall | F1-Score | ROC AUC | Selection Rationale |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **BiLSTM** | 0.34874 | **0.95954** | 0.51156 | 0.98771 | **Primary Detector:** Chosen for highest Recall, prioritizing user safety (min. False Negatives). |
